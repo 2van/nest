@@ -73,7 +73,7 @@ describe('Express FileSend', () => {
   it('should return an error if the file does not exist', async () => {
     return request(app.getHttpServer()).get('/file/not/exist').expect(400);
   });
-  // TODO: temporarily turned off (flaky test)
+  // TODO temporarily turned off (flaky test)
   it.skip(
     'should allow for the client to end the response and be able to make another',
     async () => {
